@@ -1,0 +1,13 @@
+server:
+  port: 9502
+spring:
+  cloud:
+    config:
+      uri: http://localhost:9501
+  application:
+    name: cloudconfigclient
+  profiles:
+    active: production
+management:
+  security:
+    enabled: false

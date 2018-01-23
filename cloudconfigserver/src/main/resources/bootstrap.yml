@@ -8,9 +8,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/techragesh/springboot-cloud-config-demo/
+          uri: https://github.com/techragesh/springboot-cloud-config-demo
           search-paths: cloudconfigrepo
-          username: techragesh
-          password: Rithu123#
   application:
     name: cloudconfigserver
