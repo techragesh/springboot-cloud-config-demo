@@ -9,8 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RefreshScope
 public class EnvController {
 
-    @Value("${msg}")
-    private String msg="Config server is down. Sorry for inconvenience";
+    @Value("${msg:Config server is down. Sorry for inconvenience}")
+    private String msg;
 
     @GetMapping("/msg")
     public String getEnviornment(){
