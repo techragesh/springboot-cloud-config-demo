@@ -9,7 +9,7 @@ This project shows how to use spring boot cloud config for changing the environm
 * Created config server project and mapped the git repo for load the property file
 * Configuration property file must be bootstrap.yml or bootstrap.properties.
 
-`
+```
 server:
   port: 9501
 management:
@@ -24,7 +24,7 @@ spring:
           search-paths: cloudconfigrepo
   application:
     name: cloudconfigserver
-`
+```
 * Enable @EnableConfigServer in the Sprinboot Application Class.
 * No need to restart the configserver application if you want to change the enviornment file from cloudconfigclient.
 
@@ -32,7 +32,7 @@ spring:
 ### Config Client ###
 
 * Configuration property file must be bootstrap.yml or bootstrap.properties.
-`
+```
 server:
   port: 9502
 spring:
@@ -46,7 +46,7 @@ spring:
 management:
   security:
     enabled: false
-`
+```
 * Use @RefreshScope for refresh the configuration if you want to change the enviornment file so that no need to restart the cloudconfigserver.
 
 ### Config repo ###
