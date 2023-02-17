@@ -10,5 +10,6 @@ spring:
         git:
           uri: https://github.com/techragesh/springboot-cloud-config-demo
           search-paths: cloudconfigrepo
+          refreshRate: 10
   application:
     name: cloudconfigserver
